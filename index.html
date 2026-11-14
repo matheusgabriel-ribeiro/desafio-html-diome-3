@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Acessibilidade e Semântica - Trilha HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho principal do site -->
+    <header>
+        <h1>Portal de Notícias Tecnológicas</h1>
+        
+        <!-- Menu de Navegação Acessível -->
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal da Página -->
+    <main id="inicio">
+        
+        <!-- Seção de Destaque -->
+        <section>
+            <h2>Bem-vindo ao nosso portal acessível</h2>
+            <p>Este site foi desenvolvido seguindo rigorosamente as diretrizes de semântica e acessibilidade web.</p>
+        </section>
+
+        <!-- Seção de Artigos Independentes -->
+        <section id="artigos">
+            <h2>Últimas Postagens</h2>
+
+            <article>
+                <h3>A importância da Acessibilidade na Web</h3>
+                <p>Publicado em <time datetime="2026-06-06">6 de junho de 2026</time> por <strong>Equipe de Desenvolvimento</strong>.</p>
+                <p>Tornar a internet acessível não é apenas um diferencial, mas um requisito legal e ético fundamental para a inclusão digital...</p>
+                <a href="#" aria-label="Leia mais sobre a importância da Acessibilidade na Web">Continuar lendo</a>
+            </article>
+
+            <article>
+                <h3>Por que usar HTML Semântico?</h3>
+                <p>Publicado em <time datetime="2026-06-05">5 de junho de 2026</time> por <strong>Equipe de Desenvolvimento</strong>.</p>
+                <p>O uso correto das tags HTML ajuda os leitores de tela a interpretarem a hierarquia da página de forma clara e eficiente...</p>
+                <a href="#" aria-label="Leia mais sobre por que usar HTML Semântico">Continuar lendo</a>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Barra Lateral (Conteúdo Complementar) -->
+    <aside>
+        <h3>Sobre o Autor</h3>
+        <p>Desenvolvedor front-end focado em boas práticas, performance e inclusão digital na web.</p>
+    </aside>
+
+    <!-- Rodapé da Página -->
+    <footer>
+        <p>&copy; 2026 Portal de Notícias Tecnológicas. Todos os direitos reservados.</p>
+        <p><a href="#inicio">Voltar ao topo da página</a></p>
+    </footer>
+
+</body>
+</html>
