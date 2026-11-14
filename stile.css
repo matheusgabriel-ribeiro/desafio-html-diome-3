@@ -1,0 +1,165 @@
+/* ==========================================
+   1. CONFIGURAÇÕES GLOBAIS E RESET
+   ================================---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ==========================================
+   2. ACESSIBILIDADE (Foco visível por teclado)
+   ================================---------- */
+a:focus,
+button:focus,
+input:focus {
+    outline: 3px solid #005f73;
+    outline-offset: 2px;
+}
+
+/* ==========================================
+   3. CABEÇALHO E NAVEGAÇÃO (<header>, <nav>)
+   ================================---------- */
+header {
+    background-color: #003049;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #669bbc;
+    color: #003049;
+}
+
+/* ==========================================
+   4. CONTEÚDO PRINCIPAL (<main>, <section>, <article>)
+   ================================---------- */
+main {
+    max-width: 900px;
+    width: 90%;
+    margin: 2rem auto;
+    flex: 1;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #003049;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+}
+
+article {
+    background-color: #fdfdfd;
+    border: 1px solid #e9ecef;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 6px;
+}
+
+article h3 {
+    color: #d62828;
+    margin-bottom: 0.5rem;
+}
+
+article time {
+    font-size: 0.85rem;
+    color: #6c757d;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   5. BARRA LATERAL (<aside>)
+   ================================---------- */
+aside {
+    background-color: #e9ecef;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    border-left: 5px solid #003049;
+}
+
+aside h3 {
+    color: #003049;
+    margin-bottom: 0.5rem;
+}
+
+/* ==========================================
+   6. RODAPÉ (<footer>)
+   ================================---------- */
+footer {
+    background-color: #001d29;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #90e0ef;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
